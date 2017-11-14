@@ -1,0 +1,51 @@
+main {
+  border-bottom: 2px solid #cccccc;
+  height: 852px;
+  width: 1360px;
+}
+
+.content {
+  background: #ffffff;
+  display: inline-block;
+  height: 770px;
+  left: 155px;
+  margin: 40px 0px 40px 0px;
+  overflow: auto;
+  position: absolute;
+  width: 650px;
+}
+
+.h1-main {
+  border-bottom: 2px solid #cccccc;
+  height: 100px;
+  line-height: 100px;
+  margin: 0px 30px 0px 30px;
+  size: 20px;
+  width: 590px;
+}
+
+.img-portfolio {
+  height: 190px;
+  float: left;
+  width: 275px;
+}
+
+#img-portfolio-1 {
+  margin: 30px 33.333px 20px 33.333px;
+}
+
+#img-portfolio-2 {
+  margin: 30px 33.333px 20px 0px;
+}
+
+#img-portfolio-3 {
+  margin: 0px 33.333px 20px 33.333px;
+}
+
+#img-portfolio-4 {
+  margin: 0px 33.333px 20px 0px;
+}
+
+#img-portfolio-5 {
+  margin: 0px 33.333px 30px 33.333px;
+}
