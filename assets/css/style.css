@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/vintage-concrete.png");
+  font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 1360px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #4aaaa5;
+  font-family: "Georgia", "Times", "Times New Roman", "serif";
+}
+
+a {
+  color: #777777;
+  text-decoration: none;
+}
+
+header {
+  background: #ffffff;
+  border-bottom: 2px solid #cccccc;
+  border-top: 2px solid #cccccc;
+  height: 90px;
+  margin: 0;
+  position: relative;
+  width: 1360px;
+}
+
+.header-h1 {
+  background: #4aaaa5;
+  display: inline-block;
+  color: #ffffff;
+  height: 90px;
+  left: 155px;
+  line-height: 90px;
+  margin: 0;
+  position: absolute;
+  size: 20px;
+  text-align: center;
+  width: 250px;
+}
+
+.ul-pages {
+  display: inline-block;
+  left: 835px;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+}
+
+.li-pages {
+  display: inline-block;
+  height: 90px;
+  line-height: 90px;
+  margin-left: 35px;
+  size: 15px;
+  text-align: center;
+  width: 80px;
+}
+
+main {
+  border-bottom: 8px solid #4aaaa5;
+  height: 568px;
+  position: relative;
+  width: 1360px;
+}
+
+.content {
+  background: #ffffff;
+  display: inline-block;
+  height: 480px;
+  left: 155px;
+  margin: 40px 0px 40px 0px;
+  overflow: auto;
+  position: absolute;
+  width: 650px;
+}
+
+.main-h1 {
+  border-bottom: 2px solid #cccccc;
+  height: 100px;
+  line-height: 100px;
+  margin: 0px 30px 0px 30px;
+  size: 20px;
+  width: 590px;
+}
+
+#profile {
+  height: 150px;
+  float: left;
+  margin: 30px 30px 0px 30px;
+  width: 200px;
+}
+
+p {
+  line-height: 25px;
+  margin: 30px 0px 0px 30px;
+  size: 15px;
+  text-align: justify;
+  width: 590px;
+}
+
+.sidebar {
+  background: #ffffff;
+  clear:both;
+  display: inline-block;
+  height: 200px;
+  left: 845px;
+  margin-top: 40px;
+  position: absolute;
+  width: 270px;
+}
+
+.main-h2 {
+  border-bottom: 2px solid #cccccc;
+  height: 75px;
+  line-height: 75px;
+  margin: 0px 30px 0px 30px;
+  size: 18px;
+  width: 210px;
+}
+
+.img-social-icon {
+  height: 60px;
+  width: 60px;
+}
+
+#github {
+  margin: 30px 15px 30px 30px;
+}
+
+#linkedin {
+  margin: 30px 15px 30px 0px;
+}
+
+#stackoverflow {
+  margin: 30px 0px 30px 0px;
+}
+
+footer {
+  background: #666666;
+  line-height: 90px;
+  size: 10px;
+  text-align: center;
+}
+
+.footer-h4 {
+  height: 90px;
+  line-height: 90px;
+  margin: 0;
+  width: 1360px;
+}
