@@ -7,7 +7,7 @@ main {
 .content {
   background: #ffffff;
   display: inline-block;
-  height: 770px;
+  height: 790px;
   left: 155px;
   margin: 40px 0px 40px 0px;
   overflow: auto;
@@ -24,28 +24,60 @@ main {
   width: 590px;
 }
 
-.img-portfolio {
-  height: 190px;
+.img-wrapper {
+  height: 200px;
   float: left;
+  padding: 0;
+  text-align: center;
   width: 275px;
 }
 
-#img-portfolio-1 {
-  margin: 30px 33.333px 20px 33.333px;
+#img-wrapper-1 {
+  margin: 30px 33.333px 15px 33.333px;
 }
 
-#img-portfolio-2 {
-  margin: 30px 33.333px 20px 0px;
+#img-wrapper-2 {
+  margin: 30px 33.333px 15px 0px;
 }
 
-#img-portfolio-3 {
-  margin: 0px 33.333px 20px 33.333px;
+#img-wrapper-3 {
+  margin: 0px 33.333px 15px 33.333px;
 }
 
-#img-portfolio-4 {
-  margin: 0px 33.333px 20px 0px;
+#img-wrapper-4 {
+  margin: 0px 33.333px 15px 0px;
 }
 
-#img-portfolio-5 {
+#img-wrapper-5 {
   margin: 0px 33.333px 30px 33.333px;
+}
+
+.img-container {
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: inherit;
+}
+
+.img-portfolio {
+  height: inherit;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: inherit;
+}
+
+.img-link {
+  background: #4aaaa5;
+  bottom: 10px;
+  color: #ffffff;
+  font-size: 15px;
+  height: 60px;
+  left: 0;
+  line-height: 60px;
+  position: absolute;
+  width: inherit;
 }
