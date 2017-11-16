@@ -9,8 +9,14 @@
      h6 = 0.67em = 10.72px
 
      where 1em = 16px.
+
+   NAME: initialize.css
+   AUTHOR: Elaina Swann
+   DATE: 11/16/2017
+   REVISION LOG:  
 */
 
+/* Initialize heading elements. */
 h1 { 
   display: block;
   font-size: 2em;

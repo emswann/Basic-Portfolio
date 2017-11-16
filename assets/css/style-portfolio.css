@@ -1,3 +1,14 @@
+/* CSS stylesheet to style HTML elements in the content area of the Basic Portfolio website.
+ 
+   NAME: style-portfolio.css
+   AUTHOR: Elaina Swann
+   DATE: 11/16/2017
+   REVISION LOG:  
+*/
+
+/* Content area.
+   NOTE: Main and sidebar areas are styled in the common css stylesheet because they do not change across webpages.
+*/
 .content {
   background: #ffffff;
   display: inline-block;
@@ -8,7 +19,8 @@
   width: 650px;
 }
 
-.h1-main {
+/* Content heading. */
+.h1-content {
   border-bottom: 2px solid #cccccc;
   height: 100px;
   line-height: 100px;
@@ -17,6 +29,7 @@
   width: 590; /* Have to set width vs. auto because of using margin. */
 }
 
+/* Container holding portfolio images. */
 .img-container {
   height: 200px;
   float: left;
@@ -27,7 +40,7 @@
   width: 275px;
 }
 
-/* Overlay the img margins with specific values. */
+/* Define margins for specific gallery images since they are not consistent in the layout. */
 #img-container-1 {
   margin: 30px 33.333px 15px 33.333px;
 }
@@ -49,7 +62,7 @@
 }
 
 /* Position the image to a position inside the image container. 
-   Top=0, Left=0 is the default, but is placed here to show it is intentional. */
+   Top=0, Left=0 is the default, but is placed here to show positioning is intentional. */
 .img-portfolio {
   height: inherit;
   left: 0;
@@ -58,10 +71,10 @@
   position: absolute;
   top: 0;
   width: inherit;
-  z-index: 1;
+  z-index: 1; /* Must be smaller than .img-link. */
 }
 
-/* Position the image to a position inside the image container. */
+/* Position the link to a position inside the image container. */
 .img-link {
   background: #4aaaa5;
   bottom: 10px;
@@ -73,5 +86,5 @@
   position: absolute;
   text-decoration: none;
   width: inherit;
-  z-index: 2;
+  z-index: 2; /* Must be larger than .img-portfolio. */
 }

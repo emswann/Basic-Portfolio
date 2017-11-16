@@ -1,9 +1,20 @@
+/* CSS stylesheet to style common HTML elements across the Basic Portfolio website.
+  
+   NAME: style-common.css
+   AUTHOR: Elaina Swann
+   DATE: 11/16/2017
+   REVISION LOG:  
+*/
+
+/* Set box-sizing so padding and borders are including in the pre-defined height/width of an element.
+   Margins are NOT included in the pre-defined height/width. */
 * {
   box-sizing: border-box;
 }
 
+/* Styles overall area of the webpage. */
 body {
-  background-image: url("../images/vintage-concrete.png"); /* To Do: Background is overflowing body */
+  background-image: url("../images/vintage-concrete.png"); /* TO DO: Background is overflowing body */
   font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
   height: auto;
   margin: 0;
@@ -11,11 +22,15 @@ body {
   width: 1355px;
 }
 
+/* Overwrite heading elements (set in body element) with common font and color. */
 h1, h2, h3, h4, h5, h6 {
   color: #4aaaa5;
   font-family: "Georgia", "Times", "Times New Roman", "serif";
 }
 
+/********************************************************************************/
+/* Header area. Styled here because element is consistent across webpages.      */
+/********************************************************************************/
 header {
   background: #ffffff;
   border-bottom: 2px solid #cccccc;
@@ -40,7 +55,11 @@ header {
   text-align: center;
   width: 250px;
 }
+/********************************************************************************/
 
+/********************************************************************************/
+/* Area containing links to other webpages within the website.                  */
+/********************************************************************************/
 .ul-html-pages {
   height: auto;
   list-style: none;
@@ -66,7 +85,11 @@ header {
   font-size: 1.17em;
   text-decoration: none;
 }
+/********************************************************************************/
 
+/********************************************************************************/
+/* Main area. Styled here because element is consistent across webpages.        */
+/********************************************************************************/
 main {
   height: auto;
   margin: 0;
@@ -74,9 +97,17 @@ main {
   padding: 40px 240px 40px 155px;
   width: inherit;
 }
+/********************************************************************************/
 
-/* Content class is configured in webpage specific css stylesheet. */
 
+/* NOTE: Content class is styled in webpage-specific css stylesheet because it is not
+         consistent across webpages. */
+
+
+/********************************************************************************/    
+/* Sidebar area where links are found to personal locations on social           */
+/* networking websites.                                                         */
+/* Styled here because the area is consistent across webpages.                  */           /********************************************************************************/
 .sidebar {
   background: #ffffff;
   float: right;
@@ -86,7 +117,8 @@ main {
   width: 270px;
 }
 
-.h2-main {
+/* Sidebar heading. */
+.h2-sidebar {
   border-bottom: 2px solid #cccccc;
   height: 75px;
   line-height: 75px;
@@ -96,6 +128,7 @@ main {
   width: 210px; /* Have to set width vs. auto because of using margin. */
 }
 
+/* List area containing images and links to personal webpages within the social networking websites. */
 .ul-social {
   height: 120px;
   list-style: none;
@@ -114,14 +147,10 @@ main {
   width: 60px;
 }
 
-/* Overlay the li margins with specific values. */
-/* To Do: For some reason had to put 10px vs. 15px. Cannot find where extra spaces are coming from.
+/* Define margins for list items since they are not consistent in the layout. */
+/* TO DO: For some reason had to put 10px vs. 15px. Cannot find where extra spaces are coming from.
    60 + 15 + 60 + 15 + 60 = 210. No margins and no padding. Maybe something with images? */
-.li-github {
-  margin: 30px 10px 30px 0px;
-}
-
-.li-linkedin {
+.li-github, .li-linkedin {
   margin: 30px 10px 30px 0px;
 }
 
@@ -140,7 +169,7 @@ main {
   text-decoration: none;
   top: 0;
   width: inherit;
-  z-index: 1;
+  z-index: 1; /* Must be smaller than .img-social. */
 }
 
 /* The image follows the link to a position inside the list item. */
@@ -149,9 +178,13 @@ main {
   margin: 0;
   padding: 0;
   width: inherit;
-  z-index: 2;
+  z-index: 2; /* Must be larger than .link-social. */
 }
+/********************************************************************************/
 
+/********************************************************************************/
+/* Footer area.                                                                 */
+/********************************************************************************/
 footer {
   background: #666666;
   border-top: 8px solid #4aaaa5;
@@ -162,11 +195,13 @@ footer {
   width: inherit;
 }
 
+/* Footer heading. */
 .h5-footer {
   height: 90px;
   line-height: 90px;
   width: inherit;
 }
+/********************************************************************************/
 
 /* Classes to clear elements. */
 .clear-both {

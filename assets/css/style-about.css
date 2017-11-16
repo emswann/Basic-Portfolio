@@ -1,3 +1,14 @@
+/* CSS stylesheet to style HTML elements in the content area of the Basic Portfolio website.
+ 
+   NAME: style-about.css
+   AUTHOR: Elaina Swann
+   DATE: 11/16/2017
+   REVISION LOG:  
+*/
+
+/* Content area.
+   NOTE: Main and sidebar areas are styled in the common css stylesheet because they do not change across webpages.
+*/
 .content {
   background: #ffffff;
   display: inline-block;
@@ -8,7 +19,8 @@
   width: 650px;
 }
 
-.h1-main {
+/* Content heading. */
+.h1-content {
   border-bottom: 2px solid #cccccc;
   height: 100px;
   line-height: 100px;
@@ -17,6 +29,7 @@
   width: 590; /* Have to set width vs. auto because of using margin. */
 }
 
+/* Profile picture. */
 #img-profile {
   height: 150px;
   float: left;
@@ -25,6 +38,7 @@
   width: 200px;
 }
 
+/* Profile summary. */
 #profile-summary {
   font-size: 1em;
   height: auto;
