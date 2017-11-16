@@ -5,13 +5,18 @@
 <head>
 
   <meta charset="UTF-8" />
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
+  <meta name="description" content="Elaina Swann's About webpage" />
+  <meta name="keywords" content="Elaina, Swann" />
   <meta name="author" content="Elaina Swann" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!--  <link rel="stylesheet" type="text/css" href="assets/css/reset.css" /> -->
+  <!-- Reset css styling. -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+  <!-- Initialize css styling to default values. -->
+  <link rel="stylesheet" type="text/css" href="assets/css/initialize.css" />
+  <!-- Link to stylesheet common across basic portfolio. -->
   <link rel="stylesheet" type="text/css" href="assets/css/style-common.css" />
+  <!-- Link to stylesheet specific to About Me page. -->
   <link rel="stylesheet" type="text/css" href="assets/css/style-about.css" />
   
   <title>Elaina Swann About Page</title>
@@ -24,16 +29,21 @@
 
     <h1 class="h1-header">Elaina Swann</h1>
 
+    <!-- Links to access all pages of website. -->
     <ul class="ul-html-pages">
-      <li class="li-html-pages"><a class="a-html-pages" href="index.html" alt="About" target="_self">About</a></li>
-      <li class="li-html-pages"><a class="a-html-pages" href="portfolio.html" alt="Portfolio" target="_self">Portfolio</a></li>
-      <li class="li-html-pages"><a class="a-html-pages" href="contact.html" alt="Contact" target="_self">Contact</a></li>
+      <li class="li-html-pages"><a class="link-html-pages"href="index.html" alt="About" target="_self">About</a></li>
+
+      <li class="li-html-pages"><a class="link-html-pages" href="portfolio.html" alt="Portfolio" target="_self">Portfolio</a></li>
+
+      <li class="li-html-pages"><a class="link-html-pages" href="contact.html" alt="Contact" target="_self">Contact</a></li>
     </ul>
 
   </header>
 
   <main>
 
+    <!-- Contains information specific to About Me page. This is the sections which is specifically
+         styled in a separate stylesheet. -->
     <section class="content">
 
       <h1 class="h1-main">About Me</h1>
@@ -44,23 +54,43 @@
 
     </section>
 
+    <!-- Links to social media websites. This section is common to About Me, Contact and Porfolio pages. -->
     <section class="sidebar">
 
       <h2 class="h2-main">Connect with Me</h2>
 
-      <nav class="nav-social-links">
-        <a href=""><img class="img-social-icon img-github" src="assets/images/github-128px.png" alt="Github website" target="_blank" /></a>
-        <a href=""><img class="img-social-icon img-linkedin" src="assets/images/linkedin-128px.png" alt="Linkedin website" target="_blank" /></a>
-        <a href=""><img class="img-social-icon img-stackoverflow" src="assets/images/stackoverflow-128px.png" alt="Stackoverflow website" target="_blank" /></a>
-      </nav>
+      <ul class="ul-social">
+        <li class="li-social li-github">
+          <a class="link-social" href="https://www.github.com" target="_blank">
+            <img class="img-social" src="assets/images/github-128px.png" alt="Github website" />
+          </a>
+        </li>
+          
+        <li class="li-social li-linkedin">
+          <a class="link-social" href="https://www.linkedin.com" target="_blank">
+            <img class="img-social" src="assets/images/linkedin-128px.png" alt="Linkedin website" />
+           </a>
+        </li>
+          
+        <li class="li-social li-stackoverflow">
+          <a class="link-social" href="https://www.stackoverflow.com" target="_blank">
+            <img class="img-social" src="assets/images/stackoverflow-128px.png" alt="Stackoverflow website" />
+          </a>
+        </li>
+      </ul>
 
     </section>
 
   </main>
 
-  <footer>
-    <h4 class="h4-footer" >Copyright &#169; 2017 Elaina Swann</h4>
+  <!-- This footer is common to About Me and Contact pages. -->
+  <!-- It will need to be cleared due to floats in the main area of the webpage. -->
+  <footer class="clear-both">
+
+    <h5 class="h5-footer" >Copyright &#169; 2017 Elaina Swann</h5>
+
   </footer>
+
 </body>
 
 </html>

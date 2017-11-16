@@ -1,16 +1,9 @@
-main {
-  height: 736px;
-  width: 1360px;
-}
-
 .content {
   background: #ffffff;
   display: inline-block;
-  height: 656px;
-  left: 155px;
-  margin: 40px 0px 40px 0px;
-  overflow: auto;
-  position: absolute;
+  height: auto;
+  margin-right: 40px;
+  padding: 0;
   width: 650px;
 }
 
@@ -18,14 +11,15 @@ main {
   border-bottom: 2px solid #cccccc;
   height: 100px;
   line-height: 100px;
-  margin: 0px 30px 0px 30px;
-  size: 20px;
-  width: 590px;
+  margin: 0px 30px 0px 30px; /* Have to use margin vs. padding because border is also offset. */
+  padding: 0;
+  width: 590; /* Have to set width vs. auto because of using margin. */
 }
 
 form {
-  font-size: 10px;
-  margin: 40px 30px 40px 30px;
+  font-size: .67em;
+  margin: 30px;
+  padding: 0;
   width: 590px;
 }
 
@@ -53,6 +47,7 @@ input {
   background: #4aaaa5;
   color: #ffffff;
   height: 40px;
-  margin: 0 0 30px 0;
+  margin: 0;
+  padding: 0; 
   width: 115px;
 }

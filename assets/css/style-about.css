@@ -1,16 +1,10 @@
-main {
-  height: 640px;
-  width: 1360px;
-}
-
 .content {
   background: #ffffff;
   display: inline-block;
-  height: 560px;
-  left: 155px;
-  margin: 40px 0px 40px 0px;
+  height: auto;
+  margin-right: 40px;
+  padding: 0;
   overflow: auto;
-  position: absolute;
   width: 650px;
 }
 
@@ -18,22 +12,25 @@ main {
   border-bottom: 2px solid #cccccc;
   height: 100px;
   line-height: 100px;
-  margin: 0px 30px 0px 30px;
-  size: 20px;
-  width: 590px;
+  margin: 0px 30px 0px 30px; /* Have to use margin vs. padding because border is also offset. */
+  padding: 0;
+  width: 590; /* Have to set width vs. auto because of using margin. */
 }
 
 #img-profile {
   height: 150px;
   float: left;
   margin: 30px 30px 0px 30px;
+  padding: 0;
   width: 200px;
 }
 
 #profile-summary {
-  line-height: 25px;
-  margin: 30px 0px 0px 30px;
-  size: 15px;
+  font-size: 1em;
+  height: auto;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 30px;
   text-align: justify;
-  width: 590px;
+  width: inherit;
 }
