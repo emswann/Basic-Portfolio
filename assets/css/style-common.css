@@ -148,10 +148,11 @@ main {
 }
 
 /* Define margins for list items since they are not consistent in the layout. */
-/* TO DO: For some reason had to put 10px vs. 15px. Cannot find where extra spaces are coming from.
-   60 + 15 + 60 + 15 + 60 = 210. No margins and no padding. Maybe something with images? */
+/* NOTE: Icons are set at 60px, but actually have an extra 3px margin which is part of the image.
+         (64x64 image download is really 67x67). The extra margin could not be removed via the editor.
+         210 - (3 * 63) = 21 / 2 = 10.5px. */
 .li-github, .li-linkedin {
-  margin: 30px 10px 30px 0px;
+  margin: 30px 10.5px 30px 0px;
 }
 
 .li-stackoverflow {
