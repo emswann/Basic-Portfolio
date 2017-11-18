@@ -7,70 +7,72 @@
 */
 
 /* Content area.
-   NOTE: Main and sidebar areas are styled in the common css stylesheet because they do not change across webpages.
+   NOTE: Main and sidebar areas are styled in the common css stylesheet because they do not change across webpages. However, we are going to override main height attribute because we do not need a footer on this webpage.
 */
+main {
+  height: 90%;
+}
+
 .content {
   background: #ffffff;
   display: inline-block;
   height: auto;
-  margin-right: 40px;
-  padding: 0;
+  margin-top: 1.875em;
   overflow: auto;
-  width: 650px;
+  padding: 0;
+  width: 40.625em;
 }
 
-/* Content heading. */
+/* Content heading */
 .h1-content {
-  border-bottom: 2px solid #cccccc;
-  height: 100px;
-  line-height: 100px;
-  margin: 0px 30px 0px 30px; /* Have to use margin vs. padding because border is also offset. */
+  height: 100%;
+  margin: 0;
+  padding: .67em .9375em .67em .9375em;
+  text-align: left;
+  width: inherit;
+}
+
+#hr-content {
+  background:#cccccc;
+  margin: 0 1.875em 0 1.875em;
   padding: 0;
-  width: 590; /* Have to set width vs. auto because of using margin. */
 }
 
 /* Container holding portfolio images. */
 .img-container {
-  height: 200px;
-  float: left;
-  margin: 0;
+  height: 12.5em;
+  margin-bottom: 1.875em;
   padding: 0;
   position: relative;
   text-align: center;
-  width: 275px;
+  width: 17.1875em;
 }
 
 /* Define margins for specific gallery images since they are not consistent in the layout. */
-#img-container-1 {
-  margin: 30px 33.333px 15px 33.333px;
+#img-container-1, #img-container-3, #img-container-5 {
+  float: left;
+  margin-left: 1.875em;
 }
 
-#img-container-2 {
-  margin: 30px 33.333px 15px 0px;
+#img-container-2, #img-container-4 {
+  float: right;
+  margin-right: 1.875em;
 }
 
-#img-container-3 {
-  margin: 0px 33.333px 15px 33.333px;
-}
-
-#img-container-4 {
-  margin: 0px 33.333px 15px 0px;
-}
-
-#img-container-5 {
-  margin: 0px 33.333px 30px 33.333px;
+#img-container-1, #img-container-2 {
+  margin-top: 1.875em;
 }
 
 /* Position the image to a position inside the image container. 
    Top=0, Left=0 is the default, but is placed here to show positioning is intentional. */
 .img-portfolio {
-  height: inherit;
+  height: 12.5em;
   left: 0;
   margin: 0;
   padding: 0;
   position: absolute;
   top: 0;
-  width: inherit;
+  width: 17.1875em;
   z-index: 1; /* Must be smaller than .img-link. */
 }
 

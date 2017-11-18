@@ -13,29 +13,34 @@
   background: #ffffff;
   display: inline-block;
   height: auto;
-  margin-right: 40px;
+  margin: 1.875em 0 1.875em 0;
   padding: 0;
   overflow: auto;
-  width: 650px;
+  width: 40.625em;
 }
 
 /* Content heading. */
 .h1-content {
-  border-bottom: 2px solid #cccccc;
-  height: 100px;
-  line-height: 100px;
-  margin: 0px 30px 0px 30px; /* Have to use margin vs. padding because border is also offset. */
+  height: 100%;
+  margin: 0;
+  padding: .67em .9375em .67em .9375em;
+  text-align: left;
+  width: inherit;
+}
+
+#hr-content {
+  background:#cccccc;
+  margin: 0 1.875em 0 1.875em;
   padding: 0;
-  width: 590; /* Have to set width vs. auto because of using margin. */
 }
 
 /* Profile picture. */
 #img-profile {
-  height: 150px;
+  height: 9.375em;
   float: left;
-  margin: 30px 30px 0px 30px;
+  margin: 1.875em 1.875em 0 1.875em;
   padding: 0;
-  width: 200px;
+  width: 12.5em;
 }
 
 /* Profile summary. */
@@ -44,7 +49,7 @@
   height: auto;
   line-height: 1.7em;
   margin: 0;
-  padding: 30px;
+  padding: 1.875em;
   text-align: justify;
   width: inherit;
 }

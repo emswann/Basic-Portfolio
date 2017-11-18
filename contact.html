@@ -41,7 +41,7 @@
         
       <!-- Links to access all pages of website. -->
       <ul class="ul-html-pages">
-        <li class="li-html-pages"><a class="link-html-pages"href="index.html" alt="About" target="_self">About</a></li>
+        <li class="li-html-pages"><a class="link-html-pages" href="index.html" alt="About" target="_self">About</a></li>
 
         <li class="li-html-pages"><a class="link-html-pages" href="portfolio.html" alt="Portfolio" target="_self">Portfolio</a></li>
 
@@ -57,17 +57,19 @@
     <section class="content">
 
       <h1 class="h1-content">Contact</h1>
+
+      <hr id="hr-content" />
       
       <form action="/action_page.php"> <!-- TO DO: Create action file. 
                                             This file does not exist. It is placeholder for now. -->
-        Name:<br>
-        <input id="form-name" type="text" name="name" value="John Smith"><br>
+        <h2 id="label-name">Name</h2>
+        <input id="form-name" type="text" name="name" value="John Smith">
 
-        Email:<br>
-        <input id="form-email" type="text" name="email" value="example@gmail.com"><br>
+        <h2 id="label-email">Email</h2>
+        <input id="form-email" type="text" name="email" value="example@gmail.com">
 
-        Message:<br>
-        <input id="form-message" type="text" name="message" value=""><br><br>
+        <h2 id="label-message">Message</h2>
+        <input id="form-message" type="text" name="message" value="">
         
         <input id="form-submit" type="submit" value="Submit">
       </form>
@@ -81,23 +83,25 @@
     <section class="sidebar">
         
       <h2 class="h2-sidebar">Connect with Me</h2>
+
+      <hr id="hr-sidebar" />     
         
       <ul class="ul-social">
         <li class="li-social li-github">
           <a class="link-social" href="https://www.github.com" target="_blank">
-            <img class="img-social" src="assets/images/github-128px.png" alt="Github website" />
+            <img class="img-social" src="assets/images/github-64px.png" alt="Github website" />
           </a>
         </li>
         
         <li class="li-social li-linkedin">
           <a class="link-social" href="https://www.linkedin.com" target="_blank">
-            <img class="img-social" src="assets/images/linkedin-128px.png" alt="Linkedin website" />
+            <img class="img-social" src="assets/images/linkedin-64px.png" alt="Linkedin website" />
           </a>
         </li>
         
         <li class="li-social li-stackoverflow">
           <a class="link-social" href="https://www.stackoverflow.com" target="_blank">
-            <img class="img-social" src="assets/images/stackoverflow-128px.png" alt="Stackoverflow website" />
+            <img class="img-social" src="assets/images/stackoverflow-64px.png" alt="Stackoverflow website" />
           </a>
         </li>
       </ul>
