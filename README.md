@@ -1,5 +1,5 @@
 # Basic-Portfolio
-HTML/CSS Homework Recommended - Basic Portfolio
+Basic Portfolio
 
 Items on the to do list:
   * Create the action file for the contacts form. (Once I learn more.)
